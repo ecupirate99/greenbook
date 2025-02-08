@@ -2,3 +2,12 @@
 const nextConfig = {};
 
 export default nextConfig;
+module.exports = {
+  // ... other configurations ...
+  rewrites: async () => [
+    {
+      source: '/',
+      destination: '/home',
+    },
+  ],
+};
